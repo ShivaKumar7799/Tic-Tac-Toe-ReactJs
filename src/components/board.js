@@ -211,7 +211,7 @@ function Board(){
                                <Button text = {char7} callBack = {playGame7} />
                                <Button text = {char8} callBack = {playGame8} />
                        </div>
-                       <span> Game Winner: {gameWinner} </span>
+                       <span> Game Winner: Player {gameWinner} </span>
                 </>
         )
 }
