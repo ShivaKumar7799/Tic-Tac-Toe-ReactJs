@@ -18,7 +18,7 @@ function Board(){
 
 
         let turn = function(){
-                if(count == 1){
+                if(count === 1){
                         setCount(2)
                 } else{
                         setCount(1);
@@ -26,9 +26,9 @@ function Board(){
         }
         
         let playGame0 = function(){
-                if(char0 == "-" && (gameWinner !=1 && gameWinner !=2) ){
+                if(char0 === "-" && (gameWinner !==1 && gameWinner !==2) ){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char0 = "X"
                                 setChar0("X");
                         } 
@@ -41,9 +41,9 @@ function Board(){
         }
 
         let playGame1 = function(){
-                if(char1 == "-"  && (gameWinner !=1 && gameWinner !=2) ){
+                if(char1 === "-"  && (gameWinner !==1 && gameWinner !==2) ){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char1 = "X"
                                 setChar1("X");
                         } 
@@ -56,9 +56,9 @@ function Board(){
         }
 
         let playGame2 = function(){
-                if(char2 == "-"  && (gameWinner !=1 && gameWinner !=2)){
+                if(char2 === "-"  && (gameWinner !==1 && gameWinner !==2)){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char2 = "X"
                                 setChar2("X");
                         } 
@@ -71,9 +71,9 @@ function Board(){
         }
 
         let playGame3 = function(){
-                if(char3 == "-"  && (gameWinner !=1 && gameWinner !=2)){
+                if(char3 === "-"  && (gameWinner !==1 && gameWinner !==2)){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char3 = "X"
                                 setChar3("X");
                         } 
@@ -87,9 +87,9 @@ function Board(){
         }
 
         let playGame4 = function(){
-                if(char4 == "-"  && (gameWinner !=1 && gameWinner !=2)){
+                if(char4 === "-"  && (gameWinner !==1 && gameWinner !==2)){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char4 = "X"
                                 setChar4("X");
                         } 
@@ -102,9 +102,9 @@ function Board(){
         }
 
         let playGame5 = function(){
-                if(char5 == "-"  && (gameWinner !=1 && gameWinner !=2)){
+                if(char5 === "-"  && (gameWinner !==1 && gameWinner !==2)){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char5 = "X"
                                 setChar5("X");
                         } 
@@ -118,9 +118,9 @@ function Board(){
         }
 
         let playGame6 = function(){
-                if(char6 == "-"  && (gameWinner !=1 && gameWinner !=2)){
+                if(char6 === "-"  && (gameWinner !==1 && gameWinner !==2)){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char6 = "X"
                                 setChar6("X");
                         } 
@@ -134,9 +134,9 @@ function Board(){
         }
 
         let playGame7 = function(){
-                if(char7 == "-"  && (gameWinner !=1 && gameWinner !=2)){
+                if(char7 === "-"  && (gameWinner !==1 && gameWinner !==2)){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char7 = "X"
                                 setChar7("X");
                         } 
@@ -149,9 +149,9 @@ function Board(){
         }
 
         let playGame8 = function(){
-                if(char8 == "-"  && (gameWinner !=1 && gameWinner !=2)){
+                if(char8 === "-"  && (gameWinner !==1 && gameWinner !==2)){
                         turn();
-                        if(count == 1){
+                        if(count === 1){
                                 char8 = "X"
                                 setChar8("X");
                         } 
@@ -164,28 +164,28 @@ function Board(){
         }
 
         let winner = function(){
-                if((char0 == char1) && (char1 == char2) && (char2 != "-") ){
+                if((char0 === char1) && (char1 === char2) && (char2 !== "-") ){
                         setGameWinner(count);
                 }
-                else if((char3 == char4) && (char4 == char5) && (char5 != "-") ){
+                else if((char3 === char4) && (char4 === char5) && (char5 !== "-") ){
                         setGameWinner(count);
                 }
-                else if((char6 == char7) && (char7 == char8) && (char8 != "-") ){
+                else if((char6 === char7) && (char7 === char8) && (char8 !== "-") ){
                         setGameWinner(count);
                 }
-                else if((char0 == char3) && (char3 == char6) && (char6 != "-") ){
+                else if((char0 === char3) && (char3 === char6) && (char6 !== "-") ){
                         setGameWinner(count);
                 }
-                else if((char1 == char4) && (char4 == char7) && (char7 != "-") ){
+                else if((char1 === char4) && (char4 === char7) && (char7 !== "-") ){
                         setGameWinner(count);
                 }
-                else if((char2 == char5) && (char5 == char8) && (char8 != "-") ){
+                else if((char2 === char5) && (char5 === char8) && (char8 !== "-") ){
                         setGameWinner(count);
                 }
-                else if((char0 == char4) && (char4 == char8) && (char8 != "-") ){
+                else if((char0 === char4) && (char4 === char8) && (char8 !== "-") ){
                         setGameWinner(count);
                 }
-                else if((char2 == char4) && (char4 == char6) && (char6 != "-") ){
+                else if((char2 === char4) && (char4 === char6) && (char6 !== "-") ){
                         setGameWinner(count);
                 }
                 else{
